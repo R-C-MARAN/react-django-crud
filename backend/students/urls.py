@@ -6,3 +6,4 @@ router.register(r'students', studentViewSet)
 
 urlpatterns = [
     path('', include(router.urls)), ]
+
