@@ -7,7 +7,7 @@ export default function ProfileCards() {
     const [students, setStudents] = useState([]);
     const [selectedImage, setSelectedImage] = useState(null);
     useEffect(() => {
-        axios.get("http://localhost:8000/api/students/")
+        axios.get("https://react-django-crud.onrender.com/api/students/")
             .then(res => setStudents(res.data))
             .catch(err => console.log(err));
     }, []);
@@ -28,7 +28,7 @@ export default function ProfileCards() {
                                             student.photo
                                                 ? student.photo.startsWith("http")
                                                     ? student.photo
-                                                    : `http://localhost:8000${student.photo}`
+                                                    : `https://react-django-crud.onrender.com/api/students/${student.photo}`
                                                 : "/default-avatar.png"
                                         }
                                         alt={student.firstname}
