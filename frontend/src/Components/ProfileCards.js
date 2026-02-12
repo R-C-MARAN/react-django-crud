@@ -33,7 +33,7 @@ export default function ProfileCards() {
                                         }
                                         alt={student.firstname}
                                         className="rounded-circle img-fluid"
-                                        style={{ objectFit: "cover" }}
+                                        style={{ objectFit: "cover", borderRadius: "50%", width: "80px", height: "80px", cursor: "pointer" }}
 
                                         onClick={() =>
                                             setSelectedImage(
