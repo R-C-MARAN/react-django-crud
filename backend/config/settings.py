@@ -64,6 +64,7 @@ ALLOWED_HOSTS = ['.onrender.com','https://react-django-crud.onrender.com']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://react-django-crud.onrender.com',
+    'https://react-django-crud-git-main-r-c-marans-projects.vercel.app/'
 ]
 ROOT_URLCONF = 'config.urls'
 
