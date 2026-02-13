@@ -52,6 +52,7 @@ export default function StuProfileCreate() {
       setShowForm(false);
     } catch (error) {
       console.log(error);
+      
     }
   };
 

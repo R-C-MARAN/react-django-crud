@@ -39,7 +39,7 @@ export default function ProfileCards() {
                                             setSelectedImage(
                                                 student.photo.startsWith("http")
                                                     ? student.photo
-                                                    : `http://localhost:8000${student.photo}`
+                                                    : `https://react-django-crud.onrender.com/api/students/${student.photo}`
                                             )
                                         }
                                     />
